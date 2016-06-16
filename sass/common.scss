@@ -1,0 +1,135 @@
+@import "normalize";
+@import "compass/utilities";
+
+html{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  height: 100%;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.clearfix{
+  *zoom:1;
+  &::after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+  }
+}
+
+//通用按钮
+[class^=icon-]{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  font-style: normal;
+  text-indent: -9999px;
+  color: #fff;
+}
+
+//字体图标
+.iconfont{
+  display: inline-block;
+  font-family:"iconfont" !important;
+  font-size: 0.16rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  &.iconfont-wx::after{
+    content: "\e62d";
+  }
+  &.iconfont-wx-full::after{
+    content: "\e62e";
+  }
+  &.iconfont-start-full::after{
+    content: "\e620";
+  }
+  &.iconfont-start::after{
+    content: "\e61f";
+  }
+  &.iconfont-msg::after{
+    content: "\e63a";
+  }
+  &.iconfont-heart::after{
+    content: "\e647";
+  }
+  &.iconfont-book::after{
+    content: "\e619";
+  }
+  &.iconfont-home::after{
+    content: "\e6c3";
+  }
+  &.iconfont-guide::after{
+    content: "\e661";
+  }
+}
+
+//菜单按钮
+.icon-menu{
+    width: 0.42rem;
+    height: 0.36rem;
+  &::before{
+    position: absolute;
+    top: 0;
+    content: " ";
+    width: 100%;
+    height: 0.04rem;
+    border-radius: 10px;
+    background: #fff;
+  }
+  &::after{
+    position: absolute;
+    top: 0.16rem;
+    content: " ";
+    width: 100%;
+    height: 0.04rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow:0 0.16rem #fff;
+  }
+}
+#container{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.container{
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  &.side-active{
+    transform: translate3d(40%, 0, 0);
+  }
+}
+
+//导入头部样式
+@import "header";
+
+//导入侧边栏样式
+@import "aside";
+
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}

@@ -1,0 +1,43 @@
+.aside{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  margin-left: -40%;
+  background: #3498db;
+}
+
+.side-header{
+  height: 0.9rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  color: #fff;
+  font-size: 0.30rem;
+  line-height: 0.9rem;
+  .iconfont{
+    font-size: 0.40rem;
+  }
+}
+
+.side-nav{
+  list-style: none;
+  li{
+    height: 1rem;
+    border-bottom: 1px dotted #eee;
+    line-height:1rem;
+    text-align: center;
+    a{
+      display: block;
+      color: #fff;
+    }
+    span{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .iconfont{
+    margin-right: 0.5em;
+    font-size: 0.32rem;
+  }
+}
