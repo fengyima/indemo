@@ -59,6 +59,6 @@ gulp.task("watch", function(){
 
 
 //default
-gulp.task("default",["compass", "webpack"], function(){
+gulp.task("default",["compass"], function(){
   gulp.start(["browserSync", "watch"])
 });

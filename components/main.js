@@ -2,9 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header";
 import Aside from "./Aside";
+import ArticleList from "./ArticleList";
+import Footer from "./Footer";
+
 import actions from "../js/actions";
 import utils from "../js/utils";
 import event from "../js/event";
+import docSlide from "../js/docSlide";
+
 
 var _this=null;
 
@@ -14,19 +19,20 @@ class Main extends React.Component{
     super();
     _this= this;
     this.state = {
-        sidebarActive: false
+        sidebarActive: false,
+        pageRoute : "index"
     }
   }
 
   componentDidMount(){
     var _this= this;
-    event.on(document, "click", function(){
 
+    docSlide.slideLeft(function(){
       _this.setState({
         sidebarActive: false
       });
-
     })
+
 
   }
 
@@ -40,6 +46,8 @@ class Main extends React.Component{
       <main className={this.state.sidebarActive ? 'container side-active' : 'container'}>
         <Header sidebarActive={this.state.sidebarActive}
                 onMenuBtnClick={this.onMenuBtnClick.bind(this)}/>
+        <ArticleList />
+        <Footer />
         <Aside />
       </main>
     )
