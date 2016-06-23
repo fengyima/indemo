@@ -127,6 +127,14 @@ p{
   }
 }
 
+.main-box{
+  @include transition(opacity 0.5s ease-in-out);
+  opacity: 0;
+  &.show{
+    opacity: 1;
+  }
+}
+
 //导入头部样式
 @import "header";
 
@@ -137,6 +145,8 @@ p{
 //导入文章列表样式
 @import "article_item";
 
+//导入文章页
+@import "article_page";
 
 //导入footer
 @import "footer";

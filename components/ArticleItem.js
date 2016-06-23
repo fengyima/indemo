@@ -1,4 +1,5 @@
 import React from 'react';
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 class ArticleItem extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class ArticleItem extends React.Component {
     render() {
         return (
           <div className="article-item " >
-            <a href="article/page?id={this.props.id}">
+            <Link to={'article/?id='+this.props.id}>
               <h3 className="article-title">{this.props.title}</h3>
               <div className="article-desc">
                 <p>{this.props.desc}</p>
@@ -21,7 +22,7 @@ class ArticleItem extends React.Component {
                 <span className="tags">{this.props.tag}</span>
                 <span className="date">{this.props.date}</span>
               </div>
-            </a>
+            </Link>
           </div>
         );
     }

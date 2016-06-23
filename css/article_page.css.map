@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa,CACX,OAAO,CAAE,MAAM,CACf,gBAAgB,CAAE,IAAI,CAExB,cAAc,CACZ,KAAK,CAAE,IAAI,CAGb,gBAAgB,CACd,OAAO,CAAE,MAAM,CACf,MAAM,CAAE,QAAQ,CAChB,gBAAgB,CAAE,IAAI,CACtB,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,MAAM,CAGnB,gBAAgB,CACd,SAAS,CAAE,OAAO,CAClB,cAAc,CAAE,MAAM,CACtB,oBAAG,CACD,gBAAgB,CAAE,IAAI",
+"sources": ["../sass/article_page.scss"],
+"names": [],
+"file": "article_page.css"
+}

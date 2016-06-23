@@ -1,0 +1,23 @@
+.article-page{
+  padding: 0.1rem;
+  background-color: #ddd;
+}
+.article-title{
+  color: #000;
+}
+
+.article-summary{
+  padding: 0.1rem;
+  margin: 0.1rem 0;
+  background-color: #fff;
+  color: #666;
+  font-size: 0.3rem;
+}
+
+.article-content{
+  font-size: 0.32rem;
+  padding-bottom: 0.2rem;
+  pre{
+    background-color: #fff;
+  }
+}

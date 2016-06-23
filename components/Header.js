@@ -11,12 +11,11 @@ class Header extends React.Component{
 
   componentDidMount(){
     var menuBtn= this.refs.menuBtn;
-    var _this= this;
     menuBtn.addEventListener("click", function(e){
       e.preventDefault&& e.preventDefault();
       e.stopPropagation&&e.stopPropagation();
-      _this.props.onMenuBtnClick(e);
-    }, false);
+      this.props.onMenuBtnClick(e);
+    }.bind(this), false);
   }
 
 

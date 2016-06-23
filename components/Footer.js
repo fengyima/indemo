@@ -13,7 +13,7 @@ class Footer extends React.Component {
 
             </div>
             <div className="footer-copyright">
-              <p>code By Durian Feng</p>
+              <p>Code By Durian Feng</p>
               <p>&copy;2016 www.indemo.cn</p>
             </div>
           </footer>

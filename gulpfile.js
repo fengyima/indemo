@@ -50,7 +50,7 @@ gulp.task("watch", function(){
     console.log("sass files change")
   });
   gulp.watch("./components/*.js", ["webpack"]).on("change", function(){
-    console.log("react compnents webpack done!")
+    console.log("react compnents webpack success!")
   });
   gulp.watch("./js/*.js", ["webpack"]).on("change", function(){
     console.log("normal js file webpack done!")

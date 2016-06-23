@@ -1,1 +1,2 @@
 1.移动端手势的辨别
+2.toString和valueOf
